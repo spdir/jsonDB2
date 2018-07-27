@@ -166,18 +166,18 @@ class BaseJson:
     """
     return self.obj
 
-  def createSubTable(self, subtname):
+  def createTable(self, tname):
     """
-    create sub table
-    :param subtname: sub table name
+    create table
+    :param subtname:  table name
     :return: BaseJson class object
     """
-    subtable = BaseJson({})
-    if self.obj.get(subtname):
-      subtable = BaseJson(self.obj[subtname])
+    table = BaseJson({})
+    if self.obj.get(tname):
+      table = BaseJson(self.obj[tname])
     else:
-      self.obj[subtname] = subtable.allData()
-    return subtable
+      self.obj[tname] = table.allData()
+    return table
 
 
 class DB:
@@ -267,15 +267,15 @@ class NoSql:
     self.dumpTime = dumpTime
     self.db = DB(self.dump, self.nosqlFile, self.dumpTime).initDB()
 
-  def createTable(self, tname):
+  def createDB(self, dbname):
     """
-    create an table in DB
-    :param tname:
+    create an database
+    :param dbname: database name
     :return:
     """
-    table = BaseJson({})
-    if self.db.get(tname):
-      table = BaseJson(self.db[tname])
+    one_db = BaseJson({})
+    if self.db.get(dbname):
+      table = BaseJson(self.db[dbname])
     else:
-      self.db[tname] = table
-    return table
+      self.db[dbname] = one_db
+    return one_db

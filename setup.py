@@ -1,6 +1,5 @@
 from __future__ import print_function
-from setuptools import setup, find_packages
-import sys
+from setuptools import setup
 
 setup(
     name="jsonDB2",
@@ -13,7 +12,7 @@ setup(
     keywords= "jsondb memdb db",
     url="https://github.com/spdir/jsonDB2",
     package_dir={'':'jsonDB2'},
-    packages=['jsonDB'],
+    packages=[''],
     classifiers=[
         "Environment :: DB Environment",
         'Intended Audience :: Developers',
@@ -33,5 +32,5 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    zip_safe=False,
+    zip_safe=True,
 )
