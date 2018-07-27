@@ -12,7 +12,7 @@ setup(
     license="MIT",
     keywords= "jsondb memdb db",
     url="https://github.com/spdir/jsonDB2",
-    packages=['jsonDB2'],
+    packages=['jsonDB2.jsonDB2'],
     classifiers=[
         "Environment :: DB Environment",
         'Intended Audience :: Developers',
