@@ -139,14 +139,14 @@ class BaseJson:
     :return: None
     """
     self.objLock.lock()
-    val_type = type(self.obj[key])
-    if isinstance(val_type, dict):
+    val_obj = self.obj[key]
+    if isinstance(val_obj, dict):
       self.obj[key] = {}
-    elif isinstance(val_type, list):
+    elif isinstance(val_obj, list):
       self.obj[key] = []
-    elif isinstance(val_type, tuple):
+    elif isinstance(val_obj, tuple):
       self.obj[key] = ()
-    elif isinstance(val_type, set):
+    elif isinstance(val_obj, set):
       self.obj[key] = set()
     else:
       self.obj[key] = None

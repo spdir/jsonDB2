@@ -7,7 +7,7 @@ setup(
     author="Musker.Chao",
     author_email="aery_mzc9123@163.com",
     description="A memory-level non-relational database",
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding='utf-8').read(),
     license="MIT",
     keywords= "jsondb memdb db",
     url="https://github.com/spdir/jsonDB2",
