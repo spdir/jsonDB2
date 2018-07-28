@@ -14,7 +14,7 @@ setup(
     long_description_content_type="text/markdown",
     license="MIT",
     keywords= "jsondb memdb db",
-    url="https://github.com/spdir/jdb2",
+    url="https://github.com/spdir/jsonDB2",
     packages=['jdb2'],
     classifiers=[
         "Environment :: Web Environment",
