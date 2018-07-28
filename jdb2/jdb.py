@@ -275,7 +275,7 @@ class NoSql:
     """
     one_db = BaseJson({})
     if self.db.get(dbname):
-      table = BaseJson(self.db[dbname])
+      one_db = BaseJson(self.db[dbname])
     else:
       self.db[dbname] = one_db
     return one_db
