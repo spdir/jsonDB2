@@ -1,23 +1,25 @@
 from __future__ import print_function
 from setuptools import setup
 
+with open("README.md", "r", encoding='utf8') as f:
+    long_description = f.read()
+
 setup(
-    name="jsonDB2",
-    version="0.1.0",
+    name="jdb2",
+    version="0.2.0",
     author="Musker.Chao",
     author_email="aery_mzc9123@163.com",
     description="A memory-level non-relational database",
-    long_description=open("README.md", encoding='utf-8').read(),
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     license="MIT",
     keywords= "jsondb memdb db",
-    url="https://github.com/spdir/jsonDB2",
-    package_dir={'':'jsonDB2'},
-    packages=[''],
+    url="https://github.com/spdir/jdb2",
+    packages=['jdb2'],
     classifiers=[
-        "Environment :: DB Environment",
+        "Environment :: Web Environment",
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
-        'Natural Language :: Chinese',
         'Operating System :: MacOS',
         'Operating System :: Microsoft',
         'Operating System :: POSIX',

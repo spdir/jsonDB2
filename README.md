@@ -4,7 +4,7 @@
 
 #### 安装
 ```bash
-$ pip install jsonDB2
+$ pip install jdb2
 ```
 或者
 ```bash
@@ -17,11 +17,11 @@ $ python setup.py install
 
 1. 初始化实例
 ```python
-import jsonDB2
+import jdb2
 #初始化一个空的DB
-n = jsonDB2.NoSql()
+n = jdb2.NoSql()
 #将原来的数据导入到数据库,并配置自动持久化
-n = jsonDB2.NoSql(dump=True, nosqlFile='filePath', dumpTime=10)
+n = jdb2.NoSql(dump=True, nosqlFile='filePath', dumpTime=10)
   # dump: 启动持久化,并导入已有数据, 默认: False
   # nosqlFile: 持久化文件路径
   # dumpTime: 持久化时间间隔(单位: 秒), 默认: 30
@@ -30,8 +30,8 @@ d1 = n.createDB('d1')
 ```
 2. 操作使用
 ```python
->>> import jsonDB2
->>> n = jsonDB2.NoSql()   #初始化实例对象
+>>> import jdb2
+>>> n = jdb2.NoSql()   #初始化实例对象
 >>> d1 = n.createDB('d1') #创建一个DB
 >>> t1 = d1.createTable('t1') #创建一张表
 >>> d1.setValue('a','b')  #db设置一个参数
@@ -58,7 +58,6 @@ d1 = n.createDB('d1')
 1
 >>> d1.allData()  #获取所有的表或库的所有键值对，返回dict
 {'t1': {}, 'c': None}
-
 ```
 
 

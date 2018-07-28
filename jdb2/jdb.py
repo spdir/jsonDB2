@@ -182,7 +182,7 @@ class BaseJson:
 
 class DB:
   """
-  jsonDB2 load and dump class
+  jdb2 load and dump class
   """
 
   def __init__(self, dump=False, nosqlFile=None, dumpTime=30):
@@ -236,7 +236,7 @@ class DB:
 
   def initDB(self):
     """
-    init jsonDB2 object
+    init jdb2 object
     Load nosqlFile data and generate db object if nosqlFile has data,
     Create an empty db object if nosqlFile has no data
     :return: JsonDB object
@@ -252,7 +252,7 @@ class DB:
 
 class NoSql:
   """
-  jsonDB2 main Class
+  jdb2 main Class
   """
 
   def __init__(self, dump=False, nosqlFile=None, dumpTime=30):
