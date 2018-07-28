@@ -6,7 +6,7 @@ with open("README.md", "r", encoding='utf-8') as f:
 
 setup(
     name="jdb2",
-    version="0.2.1",
+    version="0.2.2",
     author="Musker.Chao",
     author_email="aery_mzc9123@163.com",
     description="A memory-level non-relational database",
