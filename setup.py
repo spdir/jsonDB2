@@ -1,12 +1,12 @@
 from __future__ import print_function
 from setuptools import setup
 
-with open("README.md", "r", encoding='utf8') as f:
+with open("README.md", "r", encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
     name="jdb2",
-    version="0.2.0",
+    version="0.2.1",
     author="Musker.Chao",
     author_email="aery_mzc9123@163.com",
     description="A memory-level non-relational database",
