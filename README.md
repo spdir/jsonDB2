@@ -2,6 +2,8 @@
 #### 介绍
 `jsonDB2`是一个基于内存的键值对数据库(非关系型数据库)
 
+开发初衷：实现个人tornado项目中内存session存储功能(不想引入redis等非关系型数据库)
+
 #### 安装
 ```bash
 $ pip install jdb2
